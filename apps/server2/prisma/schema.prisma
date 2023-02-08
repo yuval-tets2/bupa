@@ -10,7 +10,7 @@ generator client {
 model User {
   createdAt DateTime @default(now())
   firstName String?
-  id        String   @id @default(cuid()) @map("_id") @mongo.ObjectId
+  id        String   @id @default(auto()) @map("_id") @mongo.ObjectId
   lastName  String?
   password  String
   roles     Json
