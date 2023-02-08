@@ -17,6 +17,7 @@ import { Type } from "class-transformer";
 import { DateTimeNullableFilter } from "../../util/DateTimeNullableFilter";
 import { StringFilter } from "../../util/StringFilter";
 import { StringNullableFilter } from "../../util/StringNullableFilter";
+
 @InputType()
 class EventWhereInput {
   @ApiProperty({
@@ -64,4 +65,5 @@ class EventWhereInput {
   })
   name?: StringNullableFilter;
 }
+
 export { EventWhereInput };
