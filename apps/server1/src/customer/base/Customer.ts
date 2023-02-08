@@ -14,6 +14,7 @@ import { ApiProperty } from "@nestjs/swagger";
 import { IsDate, IsString, IsOptional, ValidateNested } from "class-validator";
 import { Type } from "class-transformer";
 import { Event } from "../../event/base/Event";
+
 @ObjectType()
 class Customer {
   @ApiProperty({
@@ -82,4 +83,5 @@ class Customer {
   @Field(() => Date)
   updatedAt!: Date;
 }
+
 export { Customer };

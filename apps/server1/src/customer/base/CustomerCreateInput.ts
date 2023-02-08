@@ -14,6 +14,7 @@ import { ApiProperty } from "@nestjs/swagger";
 import { IsString, IsOptional, ValidateNested } from "class-validator";
 import { EventCreateNestedManyWithoutCustomersInput } from "./EventCreateNestedManyWithoutCustomersInput";
 import { Type } from "class-transformer";
+
 @InputType()
 class CustomerCreateInput {
   @ApiProperty({
@@ -61,4 +62,5 @@ class CustomerCreateInput {
   })
   lastName?: string | null;
 }
+
 export { CustomerCreateInput };

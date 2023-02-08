@@ -16,6 +16,7 @@ import { Type } from "class-transformer";
 import { IsOptional, ValidateNested } from "class-validator";
 import { EventListRelationFilter } from "../../event/base/EventListRelationFilter";
 import { StringFilter } from "../../util/StringFilter";
+
 @InputType()
 class CustomerWhereInput {
   @ApiProperty({
@@ -74,4 +75,5 @@ class CustomerWhereInput {
   })
   lastName?: StringNullableFilter;
 }
+
 export { CustomerWhereInput };

@@ -12,6 +12,7 @@ https://docs.amplication.com/how-to/custom-code
 import { InputType, Field } from "@nestjs/graphql";
 import { EventWhereUniqueInput } from "../../event/base/EventWhereUniqueInput";
 import { ApiProperty } from "@nestjs/swagger";
+
 @InputType()
 class EventCreateNestedManyWithoutCustomersInput {
   @Field(() => [EventWhereUniqueInput], {
@@ -23,4 +24,5 @@ class EventCreateNestedManyWithoutCustomersInput {
   })
   connect?: Array<EventWhereUniqueInput>;
 }
+
 export { EventCreateNestedManyWithoutCustomersInput };

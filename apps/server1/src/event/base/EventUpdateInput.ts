@@ -14,6 +14,7 @@ import { ApiProperty } from "@nestjs/swagger";
 import { CustomerWhereUniqueInput } from "../../customer/base/CustomerWhereUniqueInput";
 import { ValidateNested, IsOptional, IsDate, IsString } from "class-validator";
 import { Type } from "class-transformer";
+
 @InputType()
 class EventUpdateInput {
   @ApiProperty({
@@ -50,4 +51,5 @@ class EventUpdateInput {
   })
   name?: string | null;
 }
+
 export { EventUpdateInput };

@@ -14,6 +14,7 @@ import { ApiProperty } from "@nestjs/swagger";
 import { IsString, IsOptional, ValidateNested } from "class-validator";
 import { EventUpdateManyWithoutCustomersInput } from "./EventUpdateManyWithoutCustomersInput";
 import { Type } from "class-transformer";
+
 @InputType()
 class CustomerUpdateInput {
   @ApiProperty({
@@ -61,4 +62,5 @@ class CustomerUpdateInput {
   })
   lastName?: string | null;
 }
+
 export { CustomerUpdateInput };
